@@ -33,7 +33,7 @@ const generateJWT = (data, header, secret) => {
         "iat": Math.floor(d.getTime() / 1000),
         "nbf": Math.floor(d.getTime() / 1000),
         "exp": Math.floor(d.getTime() / 1000) + 3600,
-        "aud": "RocketChat",
+        "aud": "JWTwithPureJS",
         "context": data
     }
 
